@@ -1,0 +1,52 @@
+
+     so we are going to add the product class,
+     so we need to write pseudo code first, so that we can write code with ease and make sure to use ,
+     unit tests, by just asigning soem default or test values
+     So to do that we can go with a pattern which is :
+     1. create and make write list of instance variable needed.
+     2. make constructor and use default value for each time object created.
+     3.make getters and setters methodes for efficiant and ease and for securly ,
+     accesing of instance variable. by mvc.
+     4. make sure to use validation at first priority.
+     5.to use good return or response messages.
+
+     So this are the core essential things we need to cover in our first
+     phase of development
+
+     #1. Instance variable.
+     ProductName,ProductPrice,Productcategory,
+     Productsellername,ProductSellerContacts,
+     ProductDiscription , ProductDetails,
+     productRating,productReview, ImgUrl
+
+     **OK so this are the main stats of a product we dicused yet.
+     We also need images and vedios of product that we will disccuses later.**
+     but for now we can assign url of images or vedios.
+     so add one more instance variable named -: ImgUrl
+
+
+     #2. Constructor
+      1.in constructor we will assign some default values + assigning each time at product image creation.
+      2. We needed to add validation at constructor so that the product object should follow the
+         strict rules :-
+
+            2. price should be greater then zero and less then the long data type.
+               so check the product price when storing and assigning the product.
+            3. productcategory should be within the category list we are providing.
+               or can if not selected that what we are providing than asign it to the general category.
+            4. sellername and seller contacts are aoutomatically fetched from the seller when he/she going
+               to add product and  aoutomatically stored in instance variable .
+            5. productdetails and discription both are string so seller can add what ever according to them.
+            (not more then 250 words).
+            6. product rating we be change acc to the user counts that if anyone give it rating then it
+               will be updated acc to the avg counting of all rating to 5.
+            7. product review can be given by customers if they like the product it will be as an comment section
+                again it was also a string.(not more then 250 words.)
+            8. product image url can be as an string which will be added by seller at the time of adding product.
+
+
+     3. Methods
+      we neeed all getters and setters so that we can perform our buiesness logic.
+
+
+
