@@ -29,7 +29,7 @@ public class ProductService {
     public String getproid() {
         return "IOMS"+ (int) Math.floor(Math.random()*10000);
     }
-
+//sd
     public List<Product> GetProduct() {
         return productRepo.findAll();
     }
